@@ -1,0 +1,403 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-07 21:21:51.702652 UTC
+
+interface hw5ty_DjY41MsUh6ZFy6M5BW9TPW:Language.Nano.Eval 7103
+  interface hash: 59df1e7b3beb4e1d8ba46d7df45d39a2
+  ABI hash: 4661e5d68903579a4e9bd238196131f9
+  export-list hash: 298a06d83d6c496087203916453eefd3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d1dbcc97789d82239fa92bfdb3a396cb
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Nano.Eval.env0
+  Language.Nano.Eval.eval
+  Language.Nano.Eval.execExpr
+  Language.Nano.Eval.execFile
+  Language.Nano.Eval.execString
+  Language.Nano.Eval.lookupId
+  Language.Nano.Eval.parse
+  Language.Nano.Eval.prelude
+module dependencies: Language.Nano.Lexer Language.Nano.Parser
+                     Language.Nano.Types
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Control.Exception e9090e246fba030faecf7b81b3e8e320
+import  -/  base-4.8.2.0:Control.Exception.Base b99410eaf0cc6bb119b1d45a497c1b10
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Exception 18c46fe9c5c0c3a120035f264ef32d41
+import  -/  base-4.8.2.0:GHC.IO bb5b81adcea33b14bd4abe16d7dde45f
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  Language.Nano.Parser 4683765fa9d782da83b0dd5bd778b7ef
+  exports: a3c6a335d3577fc70511fd0483ba26ac
+  parseExpr 38b0f1be9ebcc7932c7a6917f28d160c
+import  -/  Language.Nano.Types a8a3f8a49fdb6b6c7c9de1ec61941964
+  exports: 41c2ee5ade12c293a56998c093d0af51
+  And 7de4a8b91f0ae6d1413589f912d98a85
+  Binop b994d17ea734bcd1ca30fdcf4800e482
+  Cons e082acc4c947fd3827ab2705fd601b98
+  Div f83ee2df946d06ba21de1f501896c569
+  EApp 4fa8e25715870c62e1062c432de1f8e5
+  EBin a942c80942a24ca0cf6603360824634b
+  EBool 0258993137e678a1ab87e63e768b0efd
+  EIf 1c8cb010e3faf9577b3077388512d358
+  EInt dad506fef3d0cd6e80a6d181dbd4f9b1
+  ELam c522c84c810dd599b221ce305ca157c7
+  ELet 8c7d04cb36fbf787af53d3ebeb8fba7a
+  ENil 2df02895840ef171951b8ee2e383a37f
+  EVar a054bb1264d8018515ed5fe28916b00a
+  Env 8353f80b3e58697a07776bd834d2fec8
+  Eq 1104559f7bccf60cf7ca2d5b50232ac1
+  Error e7dccac321d31de73e9a895dfbc391cf
+  Error 8252749c82cfc158f5d6b982ab7c7ae5
+  Expr f9ca8cd9efb7859ec27c4e153153ab76
+  Id 2fc4783a4c7dd1ef7187ffd129fff509
+  Le 4925f473d10f82b5da5eb6ed035a15f3
+  Lt 56f6d7b4f4dc0c5546bcbd35b0a402c8
+  Minus 5b5785e99f6cbdec6d76b4a00266b09d
+  Mul cba56cb0273d475ba7a9abe9e4dde880
+  Ne d0f512bbec821b8b67adabf33dc93691
+  Or b297fc715ec3ff6a614ef7921812b712
+  Plus eb3ed5fb49752b1608dc8d8af83482ce
+  VBool 764ebd85b40ff50a8cb2c186202b0f57
+  VClos ed163b654f36769453811d9c31b7d785
+  VErr 0783f33ded43ebbf0018cee7442adcb1
+  VInt 6f262c613906f93350afd285c394f67e
+  VNil 59727632748beefc91fe51d13f85870c
+  VPair 77df73b206282709a75a3d58e9cf28d1
+  VPrim 6a981591ae0149d7f88df6ec2ea8d64e
+  Value 8353f80b3e58697a07776bd834d2fec8
+6d59e4779f55240489e26e076a603a95
+  env0 :: Language.Nano.Types.Env
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.env21
+                   Language.Nano.Eval.env1) -}
+da728f4aa29d406673508efcff247fb1
+  env1 :: [(Language.Nano.Types.Id, Language.Nano.Types.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.env17
+                   Language.Nano.Eval.env2) -}
+6e92b9243d7f31ae4bc9953d5386d48d
+  env10 :: Language.Nano.Types.Value
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.VInt Language.Nano.Eval.env11) -}
+a69fa4888bf56e83ffd3e3bb559ac6e4
+  env11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3) -}
+d04211ab259d4c97f6043dbd3f4e8679
+  env12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "z"#) -}
+0594da88fb8b96b8f666e75b51e99ab3
+  env13 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.env16,
+                  Language.Nano.Eval.env14)) -}
+1dc3f8655d45a955cfcc331dad444bb6
+  env14 :: Language.Nano.Types.Value
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.VInt Language.Nano.Eval.env15) -}
+e16e7f2b310adc5ea5b9f1d764ccbf08
+  env15 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2) -}
+a2f8daa9e24798d4f11b491604342969
+  env16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "y"#) -}
+00cab9f129f90cc9dec806b017c769a8
+  env17 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.env20,
+                  Language.Nano.Eval.env18)) -}
+b8ce3e002245b2df8a413b3f37fcc380
+  env18 :: Language.Nano.Types.Value
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.VInt Language.Nano.Eval.env19) -}
+db769cb732b01a4cfa18af6f4fcc1922
+  env19 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
+b4faaa3ac59304352839c70359996782
+  env2 :: [(Language.Nano.Types.Id, Language.Nano.Types.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.env13
+                   Language.Nano.Eval.env3) -}
+39405dce9069db3cb676f6f49dfd3512
+  env20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "x"#) -}
+62f018884289f50bc5a8420dcfe91871
+  env21 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.env8, Language.Nano.Eval.env22)) -}
+b7f5b84e9152a7d47841a59205968e7d
+  env22 :: Language.Nano.Types.Value
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.VInt Language.Nano.Eval.env23) -}
+363337d1f602f758704aa208a3d41661
+  env23 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+26089fdace8addd95eae4584066ee966
+  env3 :: [(Language.Nano.Types.Id, Language.Nano.Types.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.env9
+                   Language.Nano.Eval.env4) -}
+8f4dbe07f81d45caedc4021e2a729a48
+  env4 :: [(Language.Nano.Types.Id, Language.Nano.Types.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.env5
+                   (GHC.Types.[]
+                      @ (Language.Nano.Types.Id, Language.Nano.Types.Value))) -}
+f1565573602cdd3c1358826f614e90b6
+  env5 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.env8, Language.Nano.Eval.env6)) -}
+da4996236bb51c0a43e74e8be73472a0
+  env6 :: Language.Nano.Types.Value
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.VInt Language.Nano.Eval.env7) -}
+77b7cf5ebdd79153a406b68759fdc205
+  env7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4) -}
+9b4fba656b06765680ee83a1e28bb0a8
+  env8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "z1"#) -}
+265dbac2434db0d69c9df6cc2f706bdb
+  env9 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.env12,
+                  Language.Nano.Eval.env10)) -}
+19a21ed58a8818611d7307dddf7fc93d
+  eval ::
+    Language.Nano.Types.Env
+    -> Language.Nano.Types.Expr -> Language.Nano.Types.Value
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+c2d0fc78bb8dd08f38d2e6c7dd9e133b
+  execExpr ::
+    Language.Nano.Types.Expr -> GHC.Types.IO Language.Nano.Types.Value
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.Eval.execExpr1
+                  `cast`
+                (<Language.Nano.Types.Expr>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Language.Nano.Types.Value>_R)) -}
+7f34d3b79f3f5680247ea2e53cdb74f0
+  execExpr1 ::
+    Language.Nano.Types.Expr
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Value #)
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ e :: Language.Nano.Types.Expr
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.Prim.catch#
+                   @ Language.Nano.Types.Value
+                   @ GHC.Exception.SomeException
+                   (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    (# s, Language.Nano.Eval.eval Language.Nano.Eval.prelude e #))
+                   Language.Nano.Eval.execExpr2
+                   eta) -}
+ae9eb21fd3ec32d66232da3147a536b0
+  execExpr2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Value #)
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ e1 :: GHC.Exception.SomeException[OneShot]
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e10 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e10 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.NTCo:Typeable[0] <*>_N <e10>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e10) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case dt of wild2 {
+                   DEFAULT
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ Language.Nano.Types.Value
+                        wild
+                        eta
+                   __word 14477351008804353422
+                   -> case dt1 of wild3 {
+                        DEFAULT
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ Language.Nano.Types.Value
+                             wild
+                             eta
+                        __word 17359939187657481628
+                        -> case e2
+                                  `cast`
+                                (UnivCo mkUnsafeCo representational e10 Language.Nano.Types.Error) of wild4 { Language.Nano.Types.Error msg ->
+                           (# eta, Language.Nano.Types.VErr msg #) } } } } }) -}
+28a1456ae2963c36039a6dee890eb727
+  execFile ::
+    GHC.IO.FilePath -> GHC.Types.IO Language.Nano.Types.Value
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.Eval.execFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Language.Nano.Types.Value>_R)) -}
+52c966860614366ee2e8dc55469a40f4
+  execFile1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Value #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ f :: GHC.IO.FilePath
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.Prim.catch#
+                   @ Language.Nano.Types.Value
+                   @ GHC.Exception.SomeException
+                   (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    case GHC.IO.Handle.FD.openFile1
+                           f
+                           GHC.IO.IOMode.ReadMode
+                           s of ds1 { (#,#) ipv ipv1 ->
+                    case GHC.IO.Handle.Text.hGetContents1
+                           ipv1
+                           ipv of ds2 { (#,#) ipv2 ipv3 ->
+                    Language.Nano.Eval.execFile2 ipv3 ipv2 } })
+                   Language.Nano.Eval.execExpr2
+                   eta) -}
+fc5dc281b6cb39370b96923d83b2f6dc
+  execFile2 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Value #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ s :: GHC.Base.String
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.Prim.catch#
+                   @ Language.Nano.Types.Value
+                   @ GHC.Exception.SomeException
+                   (\ eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    GHC.Prim.catch#
+                      @ Language.Nano.Types.Value
+                      @ GHC.Exception.SomeException
+                      (\ s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                       (# s1,
+                          Language.Nano.Eval.eval
+                            Language.Nano.Eval.prelude
+                            (Language.Nano.Parser.parseExpr s) #))
+                      Language.Nano.Eval.execExpr2
+                      eta1)
+                   Language.Nano.Eval.execExpr2
+                   eta) -}
+1fad92f088e3c5b071cf9bce5a6d26b2
+  execString ::
+    GHC.Base.String -> GHC.Types.IO Language.Nano.Types.Value
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.Eval.execFile2
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Language.Nano.Types.Value>_R)) -}
+ea7dfca383875335120290d790d58aad
+  lookupId ::
+    Language.Nano.Types.Id
+    -> Language.Nano.Types.Env -> Language.Nano.Types.Value
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+b79139cbadefa52759907e605175b68e
+  parse :: GHC.Base.String -> Language.Nano.Types.Expr
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.Parser.parseExpr -}
+fccc4451ef6586b02dddfac544a5e39b
+  prelude :: Language.Nano.Types.Env
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.prelude7
+                   Language.Nano.Eval.prelude1) -}
+b9b650145606c19b7f0c465509ee5f77
+  prelude1 :: [(Language.Nano.Types.Id, Language.Nano.Types.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Value)
+                   Language.Nano.Eval.prelude2
+                   (GHC.Types.[]
+                      @ (Language.Nano.Types.Id, Language.Nano.Types.Value))) -}
+bd4a8e35eb3965acb1f52e72912e0b72
+  prelude10 :: Language.Nano.Types.Value
+  {- Strictness: b -}
+3fa3f4cd80dfd0d24b26e66106e870c5
+  prelude11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "head"#) -}
+d2f8fb5b2d996837fd628aa14c325882
+  prelude2 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.prelude6,
+                  Language.Nano.Eval.prelude3)) -}
+e79fb2e0ca2cda1b81dc72cad972a30e
+  prelude3 :: Language.Nano.Types.Value
+  {- Strictness: m7,
+     Unfolding: (Language.Nano.Types.VPrim
+                   Language.Nano.Eval.prelude4) -}
+cf7cf7889dea693e5e7bd04b62a28ffc
+  prelude4 :: Language.Nano.Types.Value -> Language.Nano.Types.Value
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Language.Nano.Types.Value ->
+                 case x of wild {
+                   DEFAULT -> Language.Nano.Eval.prelude5
+                   Language.Nano.Types.VPair a b -> b }) -}
+43200f30fdc17b6bf45414fcc204c110
+  prelude5 :: Language.Nano.Types.Value
+  {- Strictness: b -}
+35187ba7457bab2623f612cceeeb3225
+  prelude6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tail"#) -}
+294538543377d10f61dcb8ffbed03047
+  prelude7 :: ([GHC.Types.Char], Language.Nano.Types.Value)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.Eval.prelude11,
+                  Language.Nano.Eval.prelude8)) -}
+2ff478d2c8dbd7da3541aca9bb24b582
+  prelude8 :: Language.Nano.Types.Value
+  {- Strictness: m7,
+     Unfolding: (Language.Nano.Types.VPrim
+                   Language.Nano.Eval.prelude9) -}
+fd6a05e54ad1c675f30255ef3d817a22
+  prelude9 :: Language.Nano.Types.Value -> Language.Nano.Types.Value
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Language.Nano.Types.Value ->
+                 case x of wild {
+                   DEFAULT -> Language.Nano.Eval.prelude10
+                   Language.Nano.Types.VPair a b -> a }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

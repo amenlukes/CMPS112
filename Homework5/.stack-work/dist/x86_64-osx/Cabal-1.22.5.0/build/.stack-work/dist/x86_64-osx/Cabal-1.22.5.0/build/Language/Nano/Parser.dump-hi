@@ -1,0 +1,237 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-07 21:21:50.922046 UTC
+
+interface hw5ty_DjY41MsUh6ZFy6M5BW9TPW:Language.Nano.Parser 7103
+  interface hash: 6ced4448a3f0444b61aa1798b8c9028e
+  ABI hash: 4683765fa9d782da83b0dd5bd778b7ef
+  export-list hash: a3c6a335d3577fc70511fd0483ba26ac
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: eead8ec0cbb8bddf65bfe10c5f060b0e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Nano.Parser.parseExpr
+  Language.Nano.Parser.parseTokens
+module dependencies: Language.Nano.Lexer Language.Nano.Types
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array 6e22602c1cc5e362609f0924a7c0a209
+import  -/  base-4.8.2.0:Control.Applicative a8ebf5ad4932b411ad7725da68be9801
+import  -/  base-4.8.2.0:Control.Exception e9090e246fba030faecf7b81b3e8e320
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Either e8724afd65fd432cfe9a54014f5f762d
+import  -/  base-4.8.2.0:GHC.Arr 70f35e6bfbc61995e045edb612354887
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Exception 18c46fe9c5c0c3a120035f264ef32d41
+import  -/  base-4.8.2.0:GHC.Exts 7bdf420b67c4b8c9ccc9ea593e90bb92
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  Language.Nano.Lexer 29592f6c337de621e3a2930e3c13aa8c
+  exports: 89142ef6df6101cfe6c960523b0918b7
+  AND 7919daedcb402fe0ef2c482d24e0ce05
+  ARROW d5e71a71490b6ea2f10b92b808491824
+  COLON 033a4c9a1710ff9e0d7e37914168e967
+  COMMA 2a2abbeaafbeaa9bc4ff085bbcd695dc
+  ELSE 521926dee675a81b715e88a73c33595c
+  EQB 5176672760fe8551fb5eadda6dea8adb
+  EQL bd55e1d22a3afd8dcfba0df61d9f84d2
+  FALSE c42d91a22e28e69d50315fb38b52fc9c
+  ID 56fed2f919aa9669f27650ee3d61cbe3
+  IF ddbe1b5756befdcb8282be0655ab87e4
+  IN 30dc7ebe95267eab4982d95e908f8cbf
+  LAM 7550183e59f08b6997b53fbb78a787b5
+  LBRAC 18ccf2773a5372f1349733c00c69c58a
+  LEQ 7cb4321c67fa7106f14d1ffb78accc41
+  LESS eae0b6c467eaa94a292ca6387c2e4f4d
+  LET 8362901cdd4624b733e577788011a049
+  LPAREN 544491b0066544bd050ff0b46a824a32
+  MINUS 65eff41ed2877affd7b0b874f13aa644
+  MUL 5a81969d44f9e33f6768b1307a520040
+  NEQ e95e4085e24545077879e69d3b5141b4
+  NUM fc598d579a88ae4e3b45179e632426cc
+  OR c625ad574a1f377db52c90addf68328c
+  PLUS 9b78cbeba7095e2e6351544be4afe601
+  RBRAC 7760167e9d5a8b49246326cc1c4cf73d
+  RPAREN 9511f03520dfac9b1d62b43fc414814e
+  THEN 44d22ad824ef81e1fd645428ab452fed
+  TRUE 9952ac02df96bae63e0cc132331684f0
+  Token 7a8e47bc2aec63e666b019ec690c6d57
+  scanTokens 99ca2bbf4fd54f0a596f2c018027eb40
+import  -/  Language.Nano.Types a8a3f8a49fdb6b6c7c9de1ec61941964
+  exports: 41c2ee5ade12c293a56998c093d0af51
+  And 7de4a8b91f0ae6d1413589f912d98a85
+  Cons e082acc4c947fd3827ab2705fd601b98
+  EApp 4fa8e25715870c62e1062c432de1f8e5
+  EBin a942c80942a24ca0cf6603360824634b
+  EBool 0258993137e678a1ab87e63e768b0efd
+  EIf 1c8cb010e3faf9577b3077388512d358
+  EInt dad506fef3d0cd6e80a6d181dbd4f9b1
+  ELam c522c84c810dd599b221ce305ca157c7
+  ELet 8c7d04cb36fbf787af53d3ebeb8fba7a
+  ENil 2df02895840ef171951b8ee2e383a37f
+  EVar a054bb1264d8018515ed5fe28916b00a
+  Eq 1104559f7bccf60cf7ca2d5b50232ac1
+  Error e7dccac321d31de73e9a895dfbc391cf
+  Expr f9ca8cd9efb7859ec27c4e153153ab76
+  Id 2fc4783a4c7dd1ef7187ffd129fff509
+  Le 4925f473d10f82b5da5eb6ed035a15f3
+  Lt 56f6d7b4f4dc0c5546bcbd35b0a402c8
+  Minus 5b5785e99f6cbdec6d76b4a00266b09d
+  Mul cba56cb0273d475ba7a9abe9e4dde880
+  Ne d0f512bbec821b8b67adabf33dc93691
+  Or b297fc715ec3ff6a614ef7921812b712
+  Plus eb3ed5fb49752b1608dc8d8af83482ce
+  exprList 060981ac0f3b76a11550fb34d1a55afe
+import  -/  mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8:Control.Monad.Error.Class 8ba4363602502bb54250b1f13f4bc60e
+import  -/  mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8:Control.Monad.Except a48c40e49a1635a6f6c139e86212e5c9
+import  -/  transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Except 2f5d46e037f0502f77738cc68eb8b917
+addDependentFile "/Users/shawnchumbar/.stack/programs/x86_64-osx/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
+fixities infixr 9 HappyStk, infixr 9 HappyStk
+35fe9edf4cc58a8bf508dc30ff2110b1
+  type role HappyAbsSyn phantom phantom phantom phantom phantom phantom
+  newtype HappyAbsSyn t4 t5 t6 t7 t8 t9
+    = HappyAbsSyn Language.Nano.Parser.HappyAny
+d9d8baa1c75bc9beaa7761d474289634
+  data HappyAddr = HappyA# GHC.Prim.Addr#
+1fdc293b17d4203bcacdb2c789808f6c
+  type HappyAny = GHC.Prim.Any
+619489153e1de6a8a8d6fb37d97cdbfc
+  data HappyStk a = HappyStk a (Language.Nano.Parser.HappyStk a)
+    RecFlag: Recursive
+    Promotable
+b5d017d6a8aba8eb7dbe1e2e714c029a
+  data Happy_IntList
+    = HappyCons GHC.Prim.Int# Language.Nano.Parser.Happy_IntList
+    RecFlag: Recursive
+dfb3c46b980b49d0ef5ff5f533baa156
+  notHappyAtAll ∷ forall a. a
+  {- Strictness: b -}
+38b0f1be9ebcc7932c7a6917f28d160c
+  parseExpr ∷ GHC.Base.String → Language.Nano.Types.Expr
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s ∷ GHC.Base.String →
+                 case (Language.Nano.Lexer.$wgo
+                         Language.Nano.Lexer.alexStartPos
+                         Language.Nano.Lexer.scanTokens1
+                         (GHC.Types.[] @ Language.Nano.Lexer.Byte)
+                         s)
+                        `cast`
+                      (Trans
+                           (Control.Monad.Trans.Except.NTCo:ExceptT[0]
+                                <[GHC.Types.Char]>_N
+                                <Data.Functor.Identity.Identity>_R
+                                <[Language.Nano.Lexer.Token]>_N)
+                           (Data.Functor.Identity.NTCo:Identity[0]
+                                <Data.Either.Either
+                                   [GHC.Types.Char] [Language.Nano.Lexer.Token]>_R)) of wild {
+                   Data.Either.Left e1 → Language.Nano.Parser.parseExpr1 e1
+                   Data.Either.Right x
+                   → case (Language.Nano.Parser.parseExpr_happyNewToken
+                             0
+                             (Language.Nano.Parser.notHappyAtAll
+                                @ Language.Nano.Parser.Happy_IntList)
+                             (Language.Nano.Parser.notHappyAtAll
+                                @ (Language.Nano.Parser.HappyStk
+                                     (Language.Nano.Parser.HappyAbsSyn
+                                        Language.Nano.Types.Expr
+                                        Language.Nano.Types.Expr
+                                        Language.Nano.Types.Expr
+                                        Language.Nano.Types.Expr
+                                        [Language.Nano.Types.Expr]
+                                        [Language.Nano.Types.Id])))
+                             x)
+                            `cast`
+                          (Trans
+                               (Control.Monad.Trans.Except.NTCo:ExceptT[0]
+                                    <[GHC.Types.Char]>_N
+                                    <Data.Functor.Identity.Identity>_R
+                                    <Language.Nano.Parser.HappyAbsSyn
+                                       Language.Nano.Types.Expr
+                                       Language.Nano.Types.Expr
+                                       Language.Nano.Types.Expr
+                                       Language.Nano.Types.Expr
+                                       [Language.Nano.Types.Expr]
+                                       [Language.Nano.Types.Id]>_N)
+                               (Data.Functor.Identity.NTCo:Identity[0]
+                                    <Data.Either.Either
+                                       [GHC.Types.Char]
+                                       (Language.Nano.Parser.HappyAbsSyn
+                                          Language.Nano.Types.Expr
+                                          Language.Nano.Types.Expr
+                                          Language.Nano.Types.Expr
+                                          Language.Nano.Types.Expr
+                                          [Language.Nano.Types.Expr]
+                                          [Language.Nano.Types.Id])>_R)) of wild1 {
+                       Data.Either.Left e1 → Language.Nano.Parser.parseExpr1 e1
+                       Data.Either.Right x1
+                       → x1
+                           `cast`
+                         (UnivCo mkUnsafeCo representational (Language.Nano.Parser.HappyAbsSyn
+                                                                Language.Nano.Types.Expr
+                                                                Language.Nano.Types.Expr
+                                                                Language.Nano.Types.Expr
+                                                                Language.Nano.Types.Expr
+                                                                [Language.Nano.Types.Expr]
+                                                                [Language.Nano.Types.Id]) Language.Nano.Types.Expr) } }) -}
+3fb2ce9fef35f0ee3e98fa7b26ae806f
+  parseExpr1 ∷ GHC.Base.String → Language.Nano.Types.Expr
+  {- Arity: 1, Strictness: <L,U>b -}
+b82b2ae2fd0f9279ca450a412c22a81e
+  parseExpr_happyNewToken ∷
+    GHC.Prim.Int#
+    → Language.Nano.Parser.Happy_IntList
+    → Language.Nano.Parser.HappyStk
+        (Language.Nano.Parser.HappyAbsSyn
+           Language.Nano.Types.Expr
+           Language.Nano.Types.Expr
+           Language.Nano.Types.Expr
+           Language.Nano.Types.Expr
+           [Language.Nano.Types.Expr]
+           [Language.Nano.Types.Id])
+    → [Language.Nano.Lexer.Token]
+    → Control.Monad.Trans.Except.Except
+        GHC.Base.String
+        (Language.Nano.Parser.HappyAbsSyn
+           Language.Nano.Types.Expr
+           Language.Nano.Types.Expr
+           Language.Nano.Types.Expr
+           Language.Nano.Types.Expr
+           [Language.Nano.Types.Expr]
+           [Language.Nano.Types.Id])
+  {- Arity: 4, Strictness: <L,U><L,U><L,U(U,U)><S,1*U> -}
+0a4013cdbe70797fd7eb1ca1cff12049
+  parseTokens ∷
+    GHC.Base.String
+    → Data.Either.Either GHC.Base.String [Language.Nano.Lexer.Token]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.Lexer.scanTokens
+                  `cast`
+                (<GHC.Base.String>_R
+                 →_R Trans
+                         (Control.Monad.Trans.Except.NTCo:ExceptT[0]
+                              <GHC.Base.String>_N
+                              <Data.Functor.Identity.Identity>_R
+                              <[Language.Nano.Lexer.Token]>_N)
+                         (Data.Functor.Identity.NTCo:Identity[0]
+                              <Data.Either.Either
+                                 GHC.Base.String [Language.Nano.Lexer.Token]>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

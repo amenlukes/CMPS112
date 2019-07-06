@@ -1,0 +1,1204 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-07 21:21:52.655657 UTC
+
+interface hw5ty_DjY41MsUh6ZFy6M5BW9TPW:Language.Nano.TypeCheck 7103
+  interface hash: 00f4e446ecf73a5dbefe8a2fd1020f23
+  ABI hash: eade88fd26f5a48442e1e1c6e1fe69b7
+  export-list hash: 0eee9a8523c502d0e3d6d4ce4de20624
+  orphan hash: 1e880b2ad01c031a24f82d441c296dd3
+  flag hash: b3586b21416beff8fe2213ef763f20d5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Nano.TypeCheck.extendState
+  Language.Nano.TypeCheck.extendSubst
+  Language.Nano.TypeCheck.extendTypeEnv
+  Language.Nano.TypeCheck.freshTV
+  Language.Nano.TypeCheck.generalize
+  Language.Nano.TypeCheck.infer
+  Language.Nano.TypeCheck.initInferState
+  Language.Nano.TypeCheck.instantiate
+  Language.Nano.TypeCheck.lookupTVar
+  Language.Nano.TypeCheck.lookupVarType
+  Language.Nano.TypeCheck.mapHelper
+  Language.Nano.TypeCheck.preludeTypes
+  Language.Nano.TypeCheck.removeTVar
+  Language.Nano.TypeCheck.typeOfExpr
+  Language.Nano.TypeCheck.typeOfFile
+  Language.Nano.TypeCheck.typeOfString
+  Language.Nano.TypeCheck.unify
+  Language.Nano.TypeCheck.unifyTVar
+  Language.Nano.TypeCheck.HasTVars{Language.Nano.TypeCheck.freeTVars}
+  Language.Nano.TypeCheck.InferState{Language.Nano.TypeCheck.InferState Language.Nano.TypeCheck.stCnt Language.Nano.TypeCheck.stSub}
+  Language.Nano.TypeCheck.Substitutable{Language.Nano.TypeCheck.apply}
+module dependencies: Language.Nano.Lexer Language.Nano.Parser
+                     Language.Nano.Types
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Control.Exception e9090e246fba030faecf7b81b3e8e320
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:Debug.Trace 6660afb6094d69397ea084364da8f950
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Exception 18c46fe9c5c0c3a120035f264ef32d41
+import  -/  base-4.8.2.0:GHC.IO bb5b81adcea33b14bd4abe16d7dde45f
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  base-4.8.2.0:Text.Printf 0276d4e7547f991f04a90f6b1e7f1f46
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  Language.Nano.Parser 4683765fa9d782da83b0dd5bd778b7ef
+  exports: a3c6a335d3577fc70511fd0483ba26ac
+  parseExpr 38b0f1be9ebcc7932c7a6917f28d160c
+import  -/  Language.Nano.Types a8a3f8a49fdb6b6c7c9de1ec61941964
+  exports: 41c2ee5ade12c293a56998c093d0af51
+  :=> 6314e6673603affaf6e5490b4d4d3da6
+  EApp 4fa8e25715870c62e1062c432de1f8e5
+  EBin a942c80942a24ca0cf6603360824634b
+  EBool 0258993137e678a1ab87e63e768b0efd
+  EIf 1c8cb010e3faf9577b3077388512d358
+  EInt dad506fef3d0cd6e80a6d181dbd4f9b1
+  ELam c522c84c810dd599b221ce305ca157c7
+  ELet 8c7d04cb36fbf787af53d3ebeb8fba7a
+  ENil 2df02895840ef171951b8ee2e383a37f
+  EVar a054bb1264d8018515ed5fe28916b00a
+  Error e7dccac321d31de73e9a895dfbc391cf
+  Expr f9ca8cd9efb7859ec27c4e153153ab76
+  Forall 376a619b241ecd162206aa88e6f1a21a
+  Id 2fc4783a4c7dd1ef7187ffd129fff509
+  Mono c69042a322c3d0312c05a8dd66f260f5
+  Poly 83c0a033a5b7690dd4c40cd4eb1ba4ce
+  Subst eb2c039a505027f11d23cae46ada5179
+  TBool fcd0026ee1f73c5bdf5ada9cb40f5bb5
+  TInt a8966362f0bdd27c5a8928da8ef45bb1
+  TList bf30763aa946ea1af35b9650ef98cb3c
+  TVar ac0119264ae75fa0229295fa00452530
+  TVar 67a51384e8771a56f012b1ace859a17a
+  Type 5c563c8a170260d0383a1574bec5cd11
+  TypeEnv 03fec3ebc823e5eec2c08b3f26c18d3d
+1d4fab7c5bdcd88b4a044654c6ef152f
+  $fHasTVarsPoly ::
+    Language.Nano.TypeCheck.HasTVars Language.Nano.Types.Poly
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fHasTVarsPoly_$cfreeTVars
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:HasTVars[0]
+                          <Language.Nano.Types.Poly>_N)) -}
+6696ca0f30d35160a10450c32bee1520
+  $fHasTVarsPoly_$cfreeTVars ::
+    Language.Nano.Types.Poly -> [Language.Nano.Types.TVar]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+1d4fab7c5bdcd88b4a044654c6ef152f
+  $fHasTVarsType ::
+    Language.Nano.TypeCheck.HasTVars Language.Nano.Types.Type
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fHasTVarsType_$cfreeTVars
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:HasTVars[0]
+                          <Language.Nano.Types.Type>_N)) -}
+aa4665bd9ec5c06f5955afa26c1cc56e
+  $fHasTVarsType_$cfreeTVars ::
+    Language.Nano.Types.Type -> [Language.Nano.Types.TVar]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+1d4fab7c5bdcd88b4a044654c6ef152f
+  $fHasTVars[] ::
+    Language.Nano.TypeCheck.HasTVars Language.Nano.Types.TypeEnv
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fHasTVars[]_$cfreeTVars
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:HasTVars[0]
+                          <Language.Nano.Types.TypeEnv>_N)) -}
+90bb164e9ffcba9b7c3102354c7001b1
+  $fHasTVars[]_$cfreeTVars ::
+    Language.Nano.Types.TypeEnv -> [Language.Nano.Types.TVar]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ gamma :: Language.Nano.Types.TypeEnv ->
+                 Language.Nano.TypeCheck.$fHasTVars[]_go gamma) -}
+ed34803cc42a21e95267bda6ef938574
+  $fHasTVars[]_go ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+    -> [Language.Nano.Types.TVar]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+fcff03f83420c55bd899b5f81c282e27
+  $fShowInferState ::
+    GHC.Show.Show Language.Nano.TypeCheck.InferState
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Nano.TypeCheck.InferState
+                  Language.Nano.TypeCheck.$fShowInferState_$cshowsPrec
+                  Language.Nano.TypeCheck.$fShowInferState_$cshow
+                  Language.Nano.TypeCheck.$fShowInferState_$cshowList -}
+fcff03f83420c55bd899b5f81c282e27
+  $fShowInferState1 ::
+    Language.Nano.TypeCheck.InferState -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Language.Nano.TypeCheck.InferState
+                   w1 :: GHC.Base.String ->
+                 case w of ww { Language.Nano.TypeCheck.InferState ww1 ww2 ->
+                 Language.Nano.TypeCheck.$w$cshowsPrec 0 ww1 ww2 w1 }) -}
+fcff03f83420c55bd899b5f81c282e27
+  $fShowInferState_$cshow ::
+    Language.Nano.TypeCheck.InferState -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Language.Nano.TypeCheck.InferState ->
+                 Language.Nano.TypeCheck.$fShowInferState_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fcff03f83420c55bd899b5f81c282e27
+  $fShowInferState_$cshowList ::
+    [Language.Nano.TypeCheck.InferState] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Language.Nano.TypeCheck.InferState
+                   Language.Nano.TypeCheck.$fShowInferState1) -}
+fcff03f83420c55bd899b5f81c282e27
+  $fShowInferState_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.Nano.TypeCheck.InferState -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: Language.Nano.TypeCheck.InferState
+                   w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.Nano.TypeCheck.InferState ww3 ww4 ->
+                 Language.Nano.TypeCheck.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+b4539b7c3f4ac79bb9c033837df1f03c
+  $fSubstitutablePoly ::
+    Language.Nano.TypeCheck.Substitutable Language.Nano.Types.Poly
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fSubstitutablePoly_$capply
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:Substitutable[0]
+                          <Language.Nano.Types.Poly>_N)) -}
+f166b367171f7225950b3e6a8eba369e
+  $fSubstitutablePoly_$capply ::
+    Language.Nano.Types.Subst
+    -> Language.Nano.Types.Poly -> Language.Nano.Types.Poly
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+b4539b7c3f4ac79bb9c033837df1f03c
+  $fSubstitutableType ::
+    Language.Nano.TypeCheck.Substitutable Language.Nano.Types.Type
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fSubstitutableType_$capply
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:Substitutable[0]
+                          <Language.Nano.Types.Type>_N)) -}
+9732c2f467aa92fea385d58326bc8368
+  $fSubstitutableType_$capply ::
+    Language.Nano.Types.Subst
+    -> Language.Nano.Types.Type -> Language.Nano.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+b4539b7c3f4ac79bb9c033837df1f03c
+  $fSubstitutable[] ::
+    Language.Nano.TypeCheck.Substitutable Language.Nano.Types.TypeEnv
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fSubstitutable[]_$capply
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:Substitutable[0]
+                          <Language.Nano.Types.TypeEnv>_N)) -}
+b4539b7c3f4ac79bb9c033837df1f03c
+  $fSubstitutable[]0 ::
+    Language.Nano.TypeCheck.Substitutable Language.Nano.Types.Subst
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Nano.TypeCheck.$fSubstitutable[]0_$capply
+                  `cast`
+                (Sym (Language.Nano.TypeCheck.NTCo:Substitutable[0]
+                          <Language.Nano.Types.Subst>_N)) -}
+695e69ab8b8fc1ccf25788343aadc0a9
+  $fSubstitutable[]0_$capply ::
+    Language.Nano.Types.Subst
+    -> Language.Nano.Types.Subst -> Language.Nano.Types.Subst
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ sub :: Language.Nano.Types.Subst
+                   to :: Language.Nano.Types.Subst ->
+                 case Language.Nano.TypeCheck.$wgo1 to of ww { (#,#) ww1 ww2 ->
+                 GHC.List.zip
+                   @ [GHC.Types.Char]
+                   @ Language.Nano.Types.Type
+                   ww1
+                   (GHC.Base.map
+                      @ Language.Nano.Types.Type
+                      @ Language.Nano.Types.Type
+                      (Language.Nano.TypeCheck.$fSubstitutableType_$capply sub)
+                      ww2) }) -}
+5599fac744c957d83215e7e197032f0a
+  $fSubstitutable[]_$capply ::
+    Language.Nano.Types.Subst
+    -> Language.Nano.Types.TypeEnv -> Language.Nano.Types.TypeEnv
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ sub :: Language.Nano.Types.Subst
+                   gamma :: Language.Nano.Types.TypeEnv ->
+                 case Language.Nano.TypeCheck.$wgo gamma of ww { (#,#) ww1 ww2 ->
+                 GHC.List.zip
+                   @ [GHC.Types.Char]
+                   @ Language.Nano.Types.Poly
+                   ww1
+                   (GHC.Base.map
+                      @ Language.Nano.Types.Poly
+                      @ Language.Nano.Types.Poly
+                      (Language.Nano.TypeCheck.$fSubstitutablePoly_$capply sub)
+                      ww2) }) -}
+730015641ac7aa5c2f4270ef0bd8b092
+  $s$fEq(,) ::
+    GHC.Classes.Eq ([GHC.Types.Char], Language.Nano.Types.Type)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ([GHC.Types.Char], Language.Nano.Types.Type)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ [GHC.Types.Char]
+                     @ Language.Nano.Types.Type
+                     GHC.Classes.$fEq[]_$s$fEq[]1
+                     Language.Nano.Types.$fEqType)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ [GHC.Types.Char]
+                     @ Language.Nano.Types.Type
+                     GHC.Classes.$fEq[]_$s$fEq[]1
+                     Language.Nano.Types.$fEqType) -}
+14debf92ad403b5d48ac6264c93d27a3
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.Nano.Types.Subst
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <L,U><L,1*U><L,1*U(U)><L,U>,
+     Inline: [0] -}
+0190ff6e19410d6f7696d4c35aedd604
+  $wextendSubst ::
+    Language.Nano.Types.Subst
+    -> Language.Nano.Types.TVar
+    -> Language.Nano.Types.Type
+    -> (# (Language.Nano.Types.TVar, Language.Nano.Types.Type),
+          [(Language.Nano.Types.TVar, Language.Nano.Types.Type)] #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ w :: Language.Nano.Types.Subst
+                   w1 :: Language.Nano.Types.TVar
+                   w2 :: Language.Nano.Types.Type ->
+                 (# (w1, Language.Nano.TypeCheck.$fSubstitutableType_$capply w w2),
+                    case GHC.Classes.$fEq[]_$c==
+                           @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                           Language.Nano.TypeCheck.$s$fEq(,)
+                           w
+                           (GHC.Types.[]
+                              @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)) of wild {
+                      GHC.Types.False
+                      -> let {
+                           a :: Language.Nano.Types.Type
+                           = Language.Nano.TypeCheck.$fSubstitutableType_$capply w w2
+                         } in
+                         let {
+                           a1 :: (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                             {- Strictness: m -}
+                           = (w1, a)
+                         } in
+                         let {
+                           lvl19 :: [(Language.Nano.Types.TVar, Language.Nano.Types.Type)]
+                           = GHC.Types.:
+                               @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                               a1
+                               (GHC.Types.[]
+                                  @ (Language.Nano.Types.TVar, Language.Nano.Types.Type))
+                         } in
+                         GHC.Base.map
+                           @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                           @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                           (\ ds :: (Language.Nano.Types.TVar, Language.Nano.Types.Type) ->
+                            case ds of wild1 { (,) a' t' ->
+                            (a',
+                             Language.Nano.TypeCheck.$fSubstitutableType_$capply lvl19 t') })
+                           w
+                      GHC.Types.True
+                      -> GHC.Types.:
+                           @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                           (w1, w2)
+                           (GHC.Types.[]
+                              @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)) } #)) -}
+02689c7e0c8116f51d37215b800cb19b
+  $wgo ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+    -> (# [Language.Nano.Types.Id], [Language.Nano.Types.Poly] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+f3ac948e49c4fe0db784152954cc4772
+  $wgo1 ::
+    [(Language.Nano.Types.TVar, Language.Nano.Types.Type)]
+    -> (# [Language.Nano.Types.TVar], [Language.Nano.Types.Type] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+cfb2bfb7832110be5f16d481974a829b
+  $winfer ::
+    Language.Nano.TypeCheck.InferState
+    -> Language.Nano.Types.TypeEnv
+    -> Language.Nano.Types.Expr
+    -> (# Language.Nano.TypeCheck.InferState,
+          Language.Nano.Types.Type #)
+  {- Arity: 3, Strictness: <L,U(U,U(U))><L,U><S,1*U>, Inline: [0] -}
+0be46582e97ae372c4643f3e4b4f1baf
+  $winstantiate ::
+    GHC.Types.Int
+    -> Language.Nano.Types.Poly
+    -> (# GHC.Types.Int, Language.Nano.Types.Type #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>,
+     Inline: [0] -}
+2f2091a520d0ecee74ab066bf5e70c50
+  $wunify ::
+    Language.Nano.Types.Subst
+    -> GHC.Types.Int
+    -> Language.Nano.Types.Type
+    -> Language.Nano.Types.Type
+    -> (# Language.Nano.Types.Subst, GHC.Types.Int #)
+  {- Arity: 4, Strictness: <L,U><L,U><S,U><S,U>, Inline: [0] -}
+a4bdb1d22273cbc0d45e2cfd30514b9d
+  $wunifyTVar ::
+    Language.Nano.Types.Subst
+    -> GHC.Types.Int
+    -> Language.Nano.Types.TVar
+    -> Language.Nano.Types.Type
+    -> (# Language.Nano.Types.Subst, GHC.Types.Int #)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,U>, Inline: [0],
+     Unfolding: (\ ww :: Language.Nano.Types.Subst
+                   ww1 :: GHC.Types.Int
+                   w :: Language.Nano.Types.TVar
+                   w1 :: Language.Nano.Types.Type ->
+                 case Language.Nano.Types.$fEqType_$c==
+                        (Language.Nano.Types.TVar w)
+                        w1 of wild {
+                   GHC.Types.False
+                   -> case Language.Nano.Types.$fEqType_$c==
+                             (Language.Nano.TypeCheck.lookupTVar w ww)
+                             (Language.Nano.Types.TVar w) of wild1 {
+                        GHC.Types.False
+                        -> Language.Nano.TypeCheck.$wunify
+                             ww
+                             ww1
+                             (Language.Nano.TypeCheck.lookupTVar w ww)
+                             w1
+                        GHC.Types.True
+                        -> case GHC.List.elem
+                                  @ Language.Nano.Types.TVar
+                                  GHC.Classes.$fEq[]_$s$fEq[]1
+                                  w
+                                  (Language.Nano.TypeCheck.$fHasTVarsType_$cfreeTVars w1) of wild2 {
+                             GHC.Types.False
+                             -> (# Language.Nano.TypeCheck.extendSubst ww w w1, ww1 #)
+                             GHC.Types.True
+                             -> case Language.Nano.TypeCheck.unifyTVar1 w w1
+                                ret_ty (# Language.Nano.Types.Subst, GHC.Types.Int #)
+                                of {} } }
+                   GHC.Types.True -> (# ww, ww1 #) }) -}
+1d4fab7c5bdcd88b4a044654c6ef152f
+  class HasTVars a where
+    freeTVars :: a -> [Language.Nano.Types.TVar]
+fcff03f83420c55bd899b5f81c282e27
+  data InferState
+    = InferState {stSub :: Language.Nano.Types.Subst,
+                  stCnt :: GHC.Types.Int}
+b4539b7c3f4ac79bb9c033837df1f03c
+  class Substitutable a where
+    apply :: Language.Nano.Types.Subst -> a -> a
+883ab7bad6825d4e285d1c1a1ad23935
+  extendState ::
+    Language.Nano.TypeCheck.InferState
+    -> Language.Nano.Types.TVar
+    -> Language.Nano.Types.Type
+    -> Language.Nano.TypeCheck.InferState
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U(U,U)><L,U><L,U>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ ds :: Language.Nano.TypeCheck.InferState
+                   a :: Language.Nano.Types.TVar
+                   t :: Language.Nano.Types.Type ->
+                 case ds of wild { Language.Nano.TypeCheck.InferState sub n ->
+                 Language.Nano.TypeCheck.InferState
+                   (Language.Nano.TypeCheck.extendSubst sub a t)
+                   n }) -}
+d904c793a4e5a220ac0c83e47fda18d8
+  extendSubst ::
+    Language.Nano.Types.Subst
+    -> Language.Nano.Types.TVar
+    -> Language.Nano.Types.Type
+    -> Language.Nano.Types.Subst
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Language.Nano.Types.Subst
+                   w1 :: Language.Nano.Types.TVar
+                   w2 :: Language.Nano.Types.Type ->
+                 case Language.Nano.TypeCheck.$wextendSubst
+                        w
+                        w1
+                        w2 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                   ww1
+                   ww2 }) -}
+be9bc033bc9c41c8b7fd39877b5b8691
+  extendTypeEnv ::
+    Language.Nano.Types.Id
+    -> Language.Nano.Types.Poly
+    -> Language.Nano.Types.TypeEnv
+    -> Language.Nano.Types.TypeEnv
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,U>m2,
+     Unfolding: InlineRule (3, True, False)
+                (\ x :: Language.Nano.Types.Id
+                   s :: Language.Nano.Types.Poly
+                   gamma :: Language.Nano.Types.TypeEnv ->
+                 GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   (x, s)
+                   gamma) -}
+b2503a8aedec7f89b219b75b13dc155a
+  freshTV :: GHC.Show.Show a => a -> Language.Nano.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(A,1*C1(U),A)><L,U>m4,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a $dShow :: GHC.Show.Show a n :: a ->
+                 Language.Nano.Types.TVar
+                   (GHC.CString.unpackAppendCString#
+                      "a"#
+                      (GHC.Show.show @ a $dShow n))) -}
+cc49ef6b75f784c17c4ab684df65000f
+  generalize ::
+    Language.Nano.Types.TypeEnv
+    -> Language.Nano.Types.Type -> Language.Nano.Types.Poly
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ ds :: [(Language.Nano.Types.Id,
+                           Language.Nano.Types.Poly)]
+                   t :: Language.Nano.Types.Type ->
+                 case ds of wild {
+                   [] -> Language.Nano.Types.Mono t
+                   : ipv ipv1
+                   -> Language.Nano.TypeCheck.generalize_generalizeHelp
+                        (Data.OldList.nubBy
+                           @ Language.Nano.Types.TVar
+                           GHC.Base.eqString
+                           (Data.OldList.\\
+                              @ Language.Nano.Types.TVar
+                              GHC.Classes.$fEq[]_$s$fEq[]1
+                              (Language.Nano.TypeCheck.$fHasTVarsType_$cfreeTVars t)
+                              (Language.Nano.TypeCheck.$fHasTVars[]_go wild)))
+                        t }) -}
+41b02b4af697b77064f4a903fe7d93db
+  generalize_generalizeHelp ::
+    [Language.Nano.Types.TVar]
+    -> Language.Nano.Types.Type -> Language.Nano.Types.Poly
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+be29052cf5a6ddd961117de9bbc2f245
+  infer ::
+    Language.Nano.TypeCheck.InferState
+    -> Language.Nano.Types.TypeEnv
+    -> Language.Nano.Types.Expr
+    -> (Language.Nano.TypeCheck.InferState, Language.Nano.Types.Type)
+  {- Arity: 3, Strictness: <L,U(U,U(U))><L,U><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Language.Nano.TypeCheck.InferState
+                   w1 :: Language.Nano.Types.TypeEnv
+                   w2 :: Language.Nano.Types.Expr ->
+                 case Language.Nano.TypeCheck.$winfer
+                        w
+                        w1
+                        w2 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+767a4f56b3f69940725a8422cc22d57e
+  initInferState :: Language.Nano.TypeCheck.InferState
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.Nano.TypeCheck.InferState
+                   (GHC.Types.[]
+                      @ (Language.Nano.Types.TVar, Language.Nano.Types.Type))
+                   Language.Nano.TypeCheck.initInferState1) -}
+a75ab992d9b1c3ec828c4163d032325e
+  initInferState1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+8857d2f9bd6b979c57e27273fda63ccc
+  instantiate ::
+    GHC.Types.Int
+    -> Language.Nano.Types.Poly
+    -> (GHC.Types.Int, Language.Nano.Types.Type)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: Language.Nano.Types.Poly ->
+                 case Language.Nano.TypeCheck.$winstantiate
+                        w
+                        w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+abce161f0b3cea33c583041a15ed470d
+  lookupTVar ::
+    Language.Nano.Types.TVar
+    -> Language.Nano.Types.Subst -> Language.Nano.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+2d823c56529f592f5f8091cf977f1d94
+  lookupVarType ::
+    Language.Nano.Types.Id
+    -> Language.Nano.Types.TypeEnv -> Language.Nano.Types.Poly
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+8b8a67298b2d36f43284c2f288357f45
+  mapHelper :: GHC.Classes.Eq a => (a -> t) -> [a] -> t -> [t]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,C(U)><S,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ t
+                   @ a
+                   $dEq :: GHC.Classes.Eq a
+                   func :: a -> t
+                   subList :: [a]
+                   x :: t ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ a
+                        $dEq
+                        subList
+                        (GHC.Types.[] @ a) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.build
+                        @ t
+                        (\ @ b1 c :: t -> b1 -> b1[OneShot] n :: b1[OneShot] ->
+                         GHC.Base.foldr
+                           @ a
+                           @ b1
+                           (GHC.Base.mapFB @ t @ b1 @ a c func)
+                           n
+                           subList)
+                   GHC.Types.True -> GHC.Types.: @ t x (GHC.Types.[] @ t) }) -}
+04457aa5c0f32fa0651fb7b37d8fe5f4
+  preludeTypes :: Language.Nano.Types.TypeEnv
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes75
+                   Language.Nano.TypeCheck.preludeTypes1) -}
+1931d694a2650fd7bbae6468370a767d
+  preludeTypes1 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes73
+                   Language.Nano.TypeCheck.preludeTypes2) -}
+9184bb2dc4020793d640c738983641a5
+  preludeTypes10 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes37
+                   Language.Nano.TypeCheck.preludeTypes11) -}
+5e9ed6ea0d29caa3e1321349d4fc8169
+  preludeTypes11 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes33
+                   Language.Nano.TypeCheck.preludeTypes12) -}
+1042c55fe7c97cfcd9f3e4b6eb1b9fd5
+  preludeTypes12 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes28
+                   Language.Nano.TypeCheck.preludeTypes13) -}
+4fee097466a0d9f1255bb9a047fc911f
+  preludeTypes13 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes23
+                   Language.Nano.TypeCheck.preludeTypes14) -}
+5ee8d1d589a0c4e5429ab1dfc0e9eb6e
+  preludeTypes14 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes15
+                   (GHC.Types.[]
+                      @ (Language.Nano.Types.Id, Language.Nano.Types.Poly))) -}
+0edb9ea9ff3bf37fe0138c67077d8742
+  preludeTypes15 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes22,
+                  Language.Nano.TypeCheck.preludeTypes16)) -}
+a560f79e3f54d5fdc017b7d8c320321b
+  preludeTypes16 :: Language.Nano.Types.Poly
+  {- Strictness: m2,
+     Unfolding: (Language.Nano.Types.Forall
+                   Language.Nano.TypeCheck.preludeTypes21
+                   Language.Nano.TypeCheck.preludeTypes17) -}
+09d0e43402e21f8572a6502b8e86204e
+  preludeTypes17 :: Language.Nano.Types.Poly
+  {- Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes18) -}
+084887a6015378b5264674c052a65c49
+  preludeTypes18 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes19
+                   Language.Nano.TypeCheck.preludeTypes19) -}
+0f323094036f453204491de4edc75178
+  preludeTypes19 :: Language.Nano.Types.Type
+  {- Strictness: m5,
+     Unfolding: (Language.Nano.Types.TList
+                   Language.Nano.TypeCheck.preludeTypes20) -}
+53713c46be090b8df67b6d284306c322
+  preludeTypes2 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes71
+                   Language.Nano.TypeCheck.preludeTypes3) -}
+e032034e7153d53ff5477db04983dad7
+  preludeTypes20 :: Language.Nano.Types.Type
+  {- Strictness: m4,
+     Unfolding: (Language.Nano.Types.TVar
+                   Language.Nano.TypeCheck.preludeTypes21) -}
+3dc9fb17aacdd3a68c2b714da133b4d4
+  preludeTypes21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "t"#) -}
+cac05e32558ba15283fbb9d630ad5eec
+  preludeTypes22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tail"#) -}
+05e9702c7030595b7fc967fd98e66a15
+  preludeTypes23 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes27,
+                  Language.Nano.TypeCheck.preludeTypes24)) -}
+e95831835cd85603830e22f491470835
+  preludeTypes24 :: Language.Nano.Types.Poly
+  {- Strictness: m2,
+     Unfolding: (Language.Nano.Types.Forall
+                   Language.Nano.TypeCheck.preludeTypes21
+                   Language.Nano.TypeCheck.preludeTypes25) -}
+9a5b7f955aec30835b8d57e93349a63d
+  preludeTypes25 :: Language.Nano.Types.Poly
+  {- Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes26) -}
+32c96a2bdb0b704c1c56d48a45fe6354
+  preludeTypes26 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes19
+                   Language.Nano.TypeCheck.preludeTypes20) -}
+d11af2af30e5d783959cd77f4d321421
+  preludeTypes27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "head"#) -}
+060001d7ad708c5b58853d302e758fb3
+  preludeTypes28 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes32,
+                  Language.Nano.TypeCheck.preludeTypes29)) -}
+957b83f86c1836b231a5378fc55e9718
+  preludeTypes29 :: Language.Nano.Types.Poly
+  {- Strictness: m2,
+     Unfolding: (Language.Nano.Types.Forall
+                   Language.Nano.TypeCheck.preludeTypes21
+                   Language.Nano.TypeCheck.preludeTypes30) -}
+93e95413a5d9f946834c7b4dc9647b00
+  preludeTypes3 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes66
+                   Language.Nano.TypeCheck.preludeTypes4) -}
+a4929b1d16a363e2b3edb11586c0b016
+  preludeTypes30 :: Language.Nano.Types.Poly
+  {- Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes31) -}
+396a7c2a300bbe94933e55783ceaa026
+  preludeTypes31 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes20
+                   Language.Nano.TypeCheck.preludeTypes18) -}
+5dc16fdf62877c6d7f542ef82c132aee
+  preludeTypes32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ":"#) -}
+8c14bb04ec3aee45cd7a93f44998d1b6
+  preludeTypes33 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes36,
+                  Language.Nano.TypeCheck.preludeTypes34)) -}
+4fc7c5ca770441e732db8accb114e0eb
+  preludeTypes34 :: Language.Nano.Types.Poly
+  {- Strictness: m2,
+     Unfolding: (Language.Nano.Types.Forall
+                   Language.Nano.TypeCheck.preludeTypes21
+                   Language.Nano.TypeCheck.preludeTypes35) -}
+67ef1a45af766d7c75a6eda479eaf19b
+  preludeTypes35 :: Language.Nano.Types.Poly
+  {- Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes19) -}
+21278a1c49d671524ca1f398f47f113a
+  preludeTypes36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "[]"#) -}
+3ccc5f3c79d07267d780ffa644f7e3ee
+  preludeTypes37 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes43,
+                  Language.Nano.TypeCheck.preludeTypes38)) -}
+4718d7f6711f372ac2b01cae64b0af4d
+  preludeTypes38 :: Language.Nano.Types.Poly
+  {- Strictness: m2,
+     Unfolding: (Language.Nano.Types.Forall
+                   Language.Nano.TypeCheck.preludeTypes21
+                   Language.Nano.TypeCheck.preludeTypes39) -}
+86382baa8d274f9fcfbe89fc0f8e1d64
+  preludeTypes39 :: Language.Nano.Types.Poly
+  {- Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes40) -}
+a4a1e83f8fdac213d7e3b98842bc9996
+  preludeTypes4 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes64
+                   Language.Nano.TypeCheck.preludeTypes5) -}
+f13b33ebbc2bb31a6ca3691ef352fd7a
+  preludeTypes40 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TBool
+                   Language.Nano.TypeCheck.preludeTypes41) -}
+f543aa8022ec00a267ab3843a0942bf6
+  preludeTypes41 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes20
+                   Language.Nano.TypeCheck.preludeTypes42) -}
+1dc32f417bc13196815f880f678cf18f
+  preludeTypes42 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes20
+                   Language.Nano.TypeCheck.preludeTypes20) -}
+5c33c783f3da2f317eff12b7cc89e2c0
+  preludeTypes43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "if"#) -}
+a74bcbe8a3b4cba4da15251f393db2d3
+  preludeTypes44 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes48,
+                  Language.Nano.TypeCheck.preludeTypes45)) -}
+7fe8d93d149d8e2af89e27ccfa953467
+  preludeTypes45 :: Language.Nano.Types.Poly
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes46) -}
+83ef1a5cf9723be318c7d8a184d9607c
+  preludeTypes46 :: Language.Nano.Types.Type
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TBool
+                   Language.Nano.TypeCheck.preludeTypes47) -}
+55c4d1fcb299ec0c060789ee7c835dde
+  preludeTypes47 :: Language.Nano.Types.Type
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TBool
+                   Language.Nano.Types.TBool) -}
+39ee4a64845fb689721f8fa1f4156f24
+  preludeTypes48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "||"#) -}
+53cb52feb36cba4e243d5bb8b0d28b39
+  preludeTypes49 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes50,
+                  Language.Nano.TypeCheck.preludeTypes45)) -}
+ab3bfe4aaba7c14d549745adccf4b278
+  preludeTypes5 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes58
+                   Language.Nano.TypeCheck.preludeTypes6) -}
+fdf31738e22518509a4c9e4c33254f40
+  preludeTypes50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "&&"#) -}
+9d1870186091b68b4890899c248cae99
+  preludeTypes51 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes55,
+                  Language.Nano.TypeCheck.preludeTypes52)) -}
+f3b54559a287cb1e5d80609460c2d431
+  preludeTypes52 :: Language.Nano.Types.Poly
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes53) -}
+3fbabfcba5dcf2dfca72dcc946b8c83d
+  preludeTypes53 :: Language.Nano.Types.Type
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TInt
+                   Language.Nano.TypeCheck.preludeTypes54) -}
+d8285a1101a3f384553074d6d6cd0002
+  preludeTypes54 :: Language.Nano.Types.Type
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TInt
+                   Language.Nano.Types.TBool) -}
+faeb731817c931a4f501756124fae8c6
+  preludeTypes55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<="#) -}
+d5d1d267aced279800a63fc82c0cac17
+  preludeTypes56 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes57,
+                  Language.Nano.TypeCheck.preludeTypes52)) -}
+9e9182ac35b15baf1fdea1335d13b9c5
+  preludeTypes57 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<"#) -}
+abd6b53461def1eadc1e34c43b6c8402
+  preludeTypes58 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes63,
+                  Language.Nano.TypeCheck.preludeTypes59)) -}
+a05dfa40426907c2bdf2c0a744fff13d
+  preludeTypes59 :: Language.Nano.Types.Poly
+  {- Strictness: m2,
+     Unfolding: (Language.Nano.Types.Forall
+                   Language.Nano.TypeCheck.preludeTypes21
+                   Language.Nano.TypeCheck.preludeTypes60) -}
+248fff8d73f0582b1d07f50d1a5d59dd
+  preludeTypes6 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes56
+                   Language.Nano.TypeCheck.preludeTypes7) -}
+eb3b377fa223bf87a965a5f0c1ee0cc7
+  preludeTypes60 :: Language.Nano.Types.Poly
+  {- Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes61) -}
+168fecc827f58f04d37155428672783b
+  preludeTypes61 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes20
+                   Language.Nano.TypeCheck.preludeTypes62) -}
+b882fa64939953091f609af4532a4ebd
+  preludeTypes62 :: Language.Nano.Types.Type
+  {- Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.TypeCheck.preludeTypes20
+                   Language.Nano.Types.TBool) -}
+7badc3d35de30cd841fe26c6bacd5d2e
+  preludeTypes63 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "!="#) -}
+70bd1c20b39285405d204cf8895515c0
+  preludeTypes64 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes65,
+                  Language.Nano.TypeCheck.preludeTypes59)) -}
+56e190e64d58b13b91f025d5696aeb8c
+  preludeTypes65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "=="#) -}
+ea523a82d003cb2bc1d9f6e766721681
+  preludeTypes66 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes70,
+                  Language.Nano.TypeCheck.preludeTypes67)) -}
+71b97e689a279db2131628572a0e5d55
+  preludeTypes67 :: Language.Nano.Types.Poly
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Language.Nano.Types.Mono
+                   Language.Nano.TypeCheck.preludeTypes68) -}
+cd40e73281826f204c7f30e1a31f134f
+  preludeTypes68 :: Language.Nano.Types.Type
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TInt
+                   Language.Nano.TypeCheck.preludeTypes69) -}
+4a3b4147a11b8679c75b1a440849cc12
+  preludeTypes69 :: Language.Nano.Types.Type
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Nano.Types.:=>
+                   Language.Nano.Types.TInt
+                   Language.Nano.Types.TInt) -}
+672401ab5c1be54b19e0be964026adad
+  preludeTypes7 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes51
+                   Language.Nano.TypeCheck.preludeTypes8) -}
+f860e2b8640a462a9b81cca9682fd1e9
+  preludeTypes70 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "/"#) -}
+99fb08db283e7eba47dc8da072634139
+  preludeTypes71 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes72,
+                  Language.Nano.TypeCheck.preludeTypes67)) -}
+51fa2b8f0cdbed7a07f8aba98ccffb67
+  preludeTypes72 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*"#) -}
+2dbb618176fc72774dd5fcc2ab3254c9
+  preludeTypes73 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes74,
+                  Language.Nano.TypeCheck.preludeTypes67)) -}
+17fc88e62153046deb22a71751041a4f
+  preludeTypes74 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-"#) -}
+aaaa90140885d27d8710ca5fff226850
+  preludeTypes75 :: ([GHC.Types.Char], Language.Nano.Types.Poly)
+  {- Strictness: m,
+     Unfolding: ((Language.Nano.TypeCheck.preludeTypes76,
+                  Language.Nano.TypeCheck.preludeTypes67)) -}
+2f7a68de2507d1cc9cc88118410fdfed
+  preludeTypes76 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+"#) -}
+66b153fc189559ebe4bc0a1b8fa334c0
+  preludeTypes8 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes49
+                   Language.Nano.TypeCheck.preludeTypes9) -}
+8bbb16f6826c712bbbd122e6a35cb9be
+  preludeTypes9 ::
+    [(Language.Nano.Types.Id, Language.Nano.Types.Poly)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.Nano.Types.Id, Language.Nano.Types.Poly)
+                   Language.Nano.TypeCheck.preludeTypes44
+                   Language.Nano.TypeCheck.preludeTypes10) -}
+8ae2cee491c7e7c840ab6b48f5f72dd6
+  removeTVar ::
+    Language.Nano.Types.TVar
+    -> Language.Nano.Types.Subst -> Language.Nano.Types.Subst
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+d13d0426f2a640d49d50a2387efc1bbf
+  stCnt :: Language.Nano.TypeCheck.InferState -> GHC.Types.Int
+  RecSel Language.Nano.TypeCheck.InferState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Language.Nano.TypeCheck.InferState ->
+                 case ds of wild { Language.Nano.TypeCheck.InferState ds1 ds2 ->
+                 ds2 }) -}
+461adb2c21389122c07b9dab4dafe132
+  stSub ::
+    Language.Nano.TypeCheck.InferState -> Language.Nano.Types.Subst
+  RecSel Language.Nano.TypeCheck.InferState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Language.Nano.TypeCheck.InferState ->
+                 case ds of wild { Language.Nano.TypeCheck.InferState ds1 ds2 ->
+                 ds1 }) -}
+77bdaa3e9649a9cfbdd4a1d4238dd320
+  typeOfExpr ::
+    Language.Nano.Types.Expr -> GHC.Types.IO Language.Nano.Types.Type
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.TypeCheck.typeOfExpr1
+                  `cast`
+                (<Language.Nano.Types.Expr>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Language.Nano.Types.Type>_R)) -}
+e2a40e3b233c9ef99612cc1075a34c77
+  typeOfExpr1 ::
+    Language.Nano.Types.Expr
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Type #)
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ e :: Language.Nano.Types.Expr
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Language.Nano.TypeCheck.$winfer
+                        Language.Nano.TypeCheck.initInferState
+                        Language.Nano.TypeCheck.preludeTypes
+                        e of ww { (#,#) ww1 ww2 ->
+                 case ww1 of st { Language.Nano.TypeCheck.InferState ipv ipv1 ->
+                 case GHC.List.$wlenAcc
+                        @ (Language.Nano.Types.TVar, Language.Nano.Types.Type)
+                        ipv
+                        0 of ww3 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww3 0) of wild {
+                   GHC.Types.False -> (# eta, ww2 #)
+                   GHC.Types.True
+                   -> case ipv1 of ww4 { GHC.Types.I# ww5 ->
+                      case Language.Nano.TypeCheck.typeOfExpr2 ww5
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Language.Nano.Types.Type #)
+                      of {} } } } } }) -}
+ec739fea3272aee06a333be18cace8fe
+  typeOfExpr2 ::
+    GHC.Prim.Int# -> GHC.Types.IO Language.Nano.Types.Type
+  {- Arity: 1, Strictness: <L,U>b -}
+3b28c8f0b24b5cacf1507f0e9b9586b9
+  typeOfFile ::
+    GHC.IO.FilePath -> GHC.Types.IO Language.Nano.Types.Type
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.TypeCheck.typeOfFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Language.Nano.Types.Type>_R)) -}
+c8d63b2cdc12357713141c39f3cbe218
+  typeOfFile1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Type #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ f :: GHC.IO.FilePath
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        f
+                        GHC.IO.IOMode.ReadMode
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 Language.Nano.TypeCheck.typeOfFile2 ipv3 ipv2 } }) -}
+e214810c82e2e25e02a8bf1bfa3b3d39
+  typeOfFile2 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.Nano.Types.Type #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ s :: GHC.Base.String
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Language.Nano.TypeCheck.typeOfExpr1
+                   (Language.Nano.Parser.parseExpr s)
+                   eta) -}
+71940f9a56f67b863e6927fd6c3e135d
+  typeOfString ::
+    GHC.Base.String -> GHC.Types.IO Language.Nano.Types.Type
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Nano.TypeCheck.typeOfFile2
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <Language.Nano.Types.Type>_R)) -}
+9e53bd6aa55507ac71f5a58162342cf4
+  unify ::
+    Language.Nano.TypeCheck.InferState
+    -> Language.Nano.Types.Type
+    -> Language.Nano.Types.Type
+    -> Language.Nano.TypeCheck.InferState
+  {- Arity: 3, Strictness: <S,U(U,U)><S,U><S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Language.Nano.TypeCheck.InferState
+                   w1 :: Language.Nano.Types.Type
+                   w2 :: Language.Nano.Types.Type ->
+                 case w of ww { Language.Nano.TypeCheck.InferState ww1 ww2 ->
+                 case Language.Nano.TypeCheck.$wunify
+                        ww1
+                        ww2
+                        w1
+                        w2 of ww3 { (#,#) ww4 ww5 ->
+                 Language.Nano.TypeCheck.InferState ww4 ww5 } }) -}
+00d6c807ad9fe0035fad96c1b88cc970
+  unifyTVar ::
+    Language.Nano.TypeCheck.InferState
+    -> Language.Nano.Types.TVar
+    -> Language.Nano.Types.Type
+    -> Language.Nano.TypeCheck.InferState
+  {- Arity: 3, Strictness: <S,U(U,U)><L,U><S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: Language.Nano.TypeCheck.InferState
+                   w1 :: Language.Nano.Types.TVar
+                   w2 :: Language.Nano.Types.Type ->
+                 case w of ww { Language.Nano.TypeCheck.InferState ww1 ww2 ->
+                 case Language.Nano.TypeCheck.$wunifyTVar
+                        ww1
+                        ww2
+                        w1
+                        w2 of ww3 { (#,#) ww4 ww5 ->
+                 Language.Nano.TypeCheck.InferState ww4 ww5 } }) -}
+809056e21d7d5c5f0077eea1f044b5b4
+  unifyTVar1 ::
+    Language.Nano.Types.TVar
+    -> Language.Nano.Types.Type -> Language.Nano.TypeCheck.InferState
+  {- Arity: 2, Strictness: <L,U><L,U>b -}
+instance Language.Nano.TypeCheck.HasTVars [Language.Nano.Types.Poly]
+  = Language.Nano.TypeCheck.$fHasTVarsPoly
+instance Language.Nano.TypeCheck.HasTVars [Language.Nano.Types.Type]
+  = Language.Nano.TypeCheck.$fHasTVarsType
+instance Language.Nano.TypeCheck.HasTVars [[]]
+  = Language.Nano.TypeCheck.$fHasTVars[]
+instance GHC.Show.Show [Language.Nano.TypeCheck.InferState]
+  = Language.Nano.TypeCheck.$fShowInferState
+instance Language.Nano.TypeCheck.Substitutable [Language.Nano.Types.Poly]
+  = Language.Nano.TypeCheck.$fSubstitutablePoly
+instance Language.Nano.TypeCheck.Substitutable [Language.Nano.Types.Type]
+  = Language.Nano.TypeCheck.$fSubstitutableType
+instance Language.Nano.TypeCheck.Substitutable [[]]
+  = Language.Nano.TypeCheck.$fSubstitutable[]
+instance Language.Nano.TypeCheck.Substitutable [[]]
+  = Language.Nano.TypeCheck.$fSubstitutable[]0
+"SPEC/Language.Nano.TypeCheck $fEq(,) @ [Char] @ Type" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                                                 [GHC.Types.Char]
+                                                                       $dEq1 :: GHC.Classes.Eq
+                                                                                  Language.Nano.Types.Type
+  GHC.Classes.$fEq(,) @ [GHC.Types.Char]
+                      @ Language.Nano.Types.Type
+                      $dEq
+                      $dEq1
+  = Language.Nano.TypeCheck.$s$fEq(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
